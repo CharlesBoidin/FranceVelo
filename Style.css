@@ -3,3 +3,15 @@
     border-bottom:  5px solid}
 
 footer{border-top:  5px solid; }
+
+section{
+    margin: 50px 0
+}
+
+body{
+    background-color: rgba(218, 243, 247, 0.863);
+}
+
+nav, footer{
+    text-shadow: 1px 1px 5px black;
+}

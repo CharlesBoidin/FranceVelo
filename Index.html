@@ -20,9 +20,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
         <!-- Logo -->
-        <a class="navbar-brand" href="#"><img src="Logo.png" alt="Logo France Velo"></a>
-
-
+        <a class="navbar-brand" href="Index.html"><img src="Logo.png" alt="Logo France Velo"></a>
 
         <!-- Bouton pour nav format mobile -->
         <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -30,20 +28,64 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
+        <h1 class=" text-center text-warning font-weight-bold">Location de vélo en France</h1>
+
+        
+
         <!-- Barre de naviguation
         Zone extansible au format mobile -->
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link text-warning h4 font-weight-bold" href="#">Accueil</a>
+                    <a class="nav-link text-warning h4 font-weight-bold" href="Index.html">Accueil</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link text-warning h4 font-weight-bold" href="#">Connexion </a>
+                    <a class="nav-link text-warning h4 font-weight-bold" href="#" data-toggle="modal"
+                        data-target="#ModalConnexion">Connexion </a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link text-warning h4 font-weight-bold" href="#">Contact </a>
                 </li>
             </ul>
+        </div>
+
+        <!-- Modal Connexion-->
+        <div class="modal fade" id="ModalConnexion" tabindex="-1" role="dialog"
+            aria-labelledby="ModalConnexionTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!-- Titre Modal -->
+                        <h5 class="modal-title" id="ModalConnexionLongTitle">Veuillez vous identifier</h5>                        
+                      
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!-- Formulaire de connexion -->
+                    <div class="modal-body form-group text-center">
+                        <label class="col-3 " for="AdresseMail">Adresse mail : </label> <input name="AdresseMail" class="col-8" type="email">
+                        <br>
+                        <label class="col-3 "  for="MotPasse">Mot de passe : </label> <input name="MotPasse" class="col-8" type="password">
+                       <br>
+
+                       <div class="row">
+                       <div class="form-check  offset-1 col-4">
+                         <label class="form-check-label">
+                           <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
+                           Se souvenir de moi
+                         </label>
+                       </div>                         
+                       <a class=" offset-3 col-4 " href="#">Mot de passe perdu ?</a> </div> <br>
+                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button> 
+                       <button type="submit" class="btn btn-primary text-warning">Connexion</button>                   
+
+                    </div>
+                    <div class="modal-footer">
+                            <span> n'avez pas encore de compte ? </span> <a href="Inscription.html"> S'inscrire</a> 
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -87,7 +129,7 @@
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <!-- Flèce slide suivant -->
+            <!-- Flèche slide suivant -->
             <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
@@ -99,7 +141,7 @@
     <div class="container-fluid">
 
         <!-- Présentation -->
-        <div class="container-fluid p-2">
+        <section class="container-fluid p-2">
             <h2>Qui sommes nous ?</h2>
 
             <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam totam voluptatum
@@ -143,12 +185,12 @@
                 Doloribus, consequatur consequuntur suscipit qui molestias dolor ratione amet placeat autem dolorem
                 voluptate error sit neque dolore magnam, omnis alias eligendi quod sequi et? Omnis, excepturi facere.
                 Fugit, consectetur doloremque.</p>
-        </div>
+        </section>
 
         <!-- Fiches Produit -->
-        <div class="row">
+        <section class="row">
             <!-- Produit 1 -->
-            <div class="col-md-2">
+            <div class="col-md-3">
                 <div class="card">
 
                     <img class=" mx-auto" src="Pub1.jpg" class="card-img-top" alt="Pub">
@@ -164,7 +206,7 @@
                 </div>
             </div>
             <!-- Produit 2 -->
-            <div class="col-md-2">
+            <div class="col-md-3">
                 <div class="card">
                     <img class="mx-auto " src="Pub2.jpg" class="card-img-top" alt="Pub">
                     <div class="card-body">
@@ -178,7 +220,7 @@
                 </div>
             </div>
             <!-- Produit 3 -->
-            <div class="col-md-2">
+            <div class="col-md-3">
                 <div class="card">
                     <img class=" mx-auto" src="Pub3.jpg" class="card-img-top" alt="Pub">
                     <div class="card-body">
@@ -192,30 +234,27 @@
                 </div>
             </div>
             <!-- Produit 4 -->
-            <div class="col-md-2">
-                    <div class="card">
-                        <img class=" mx-auto" src="Pub3.jpg" class="card-img-top" alt="Pub">
-                        <div class="card-body">
-                            <span class="badge badge-secondary offset-11">Price</span>
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the
-                                card's content.</p>
-                            <a href="#" class="offset-5 btn btn-primary">Go somewhere</a>
-                        </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class=" mx-auto" src="Pub3.jpg" class="card-img-top" alt="Pub">
+                    <div class="card-body">
+                        <span class="badge badge-secondary offset-11">Price</span>
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="offset-5 btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
-        </div>
+            </div>
+        </section>
 
     </div>
-
-
-
 
     <!-- Pied de page -->
     <footer class="bg-primary border-warning text-center p-2 mt-2">
 
-        <span class="text-warning h4 font-weight-bold"> Présentation</span>
+        <span class="text-warning h4 font-weight-bold"> @Copyright - Charles Boidin - DWWM - 2019</span>
 
 
     </footer>
