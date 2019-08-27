@@ -10,6 +10,7 @@ section{
 
 body{
     background-color: rgba(218, 243, 247, 0.863);
+    margin: 0
 }
 
 nav, footer{

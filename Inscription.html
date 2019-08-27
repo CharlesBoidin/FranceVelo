@@ -3,7 +3,7 @@
 <html lang="eng">
 
 <head>
-    <title>Accueil</title>
+    <title>Inscription France Velo</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -48,39 +48,43 @@
         </div>
 
         <!-- Modal Connexion-->
-        <div class="modal fade" id="ModalConnexion" tabindex="-1" role="dialog"
-            aria-labelledby="ModalConnexionTitle" aria-hidden="true">
+        <div class="modal fade" id="ModalConnexion" tabindex="-1" role="dialog" aria-labelledby="ModalConnexionTitle"
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <!-- Titre Modal -->
-                        <h5 class="modal-title" id="ModalConnexionLongTitle">Veuillez vous identifier</h5>                        
-                      
+                        <h5 class="modal-title" id="ModalConnexionLongTitle">Veuillez vous identifier</h5>
+
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <!-- Formulaire de connexion -->
                     <div class="modal-body form-group text-center">
-                        <label class="col-3 " for="AdresseMail">Adresse mail : </label> <input name="AdresseMail" class="col-8" type="email">
+                        <label class="col-3 " for="AdresseMail">Adresse mail : </label> <input name="AdresseMail"
+                            class="col-8" type="email">
                         <br>
-                        <label class="col-3 "  for="MotPasse">Mot de passe : </label> <input name="MotPasse" class="col-8" type="password">
-                       <br>
+                        <label class="col-3 " for="MotPasse">Mot de passe : </label> <input name="MotPasse"
+                            class="col-8" type="password">
+                        <br>
 
-                       <div class="row">
-                       <div class="form-check  offset-1 col-4">
-                         <label class="form-check-label">
-                           <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
-                           Se souvenir de moi
-                         </label>
-                       </div>                         
-                       <a class=" offset-3 col-4 " href="#">Mot de passe perdu ?</a> </div> <br>
-                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button> 
-                       <button type="submit" class="btn btn-primary text-warning">Connexion</button>                   
+                        <div class="row">
+                            <div class="form-check  offset-1 col-4">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue"
+                                        checked>
+                                    Se souvenir de moi
+                                </label>
+                            </div>
+                            <a class=" offset-3 col-4 " href="#">Mot de passe perdu ?</a>
+                        </div> <br>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                        <button type="submit" class="btn btn-primary text-warning">Connexion</button>
 
                     </div>
                     <div class="modal-footer">
-                            <span> n'avez pas encore de compte ? </span> <a href="Inscription.html"> S'inscrire</a> 
+                        <span> n'avez pas encore de compte ? </span> <a href="Inscription.html"> S'inscrire</a>
                     </div>
                 </div>
             </div>
@@ -88,9 +92,158 @@
     </nav>
 
     <!-- Section principale -->
-    <div class="container-fluid p-2">
+    <section class="col-lg-8 col-12  mx-auto">
+        <form>
+            <!-- Inscription -->
+            <div class=" mx-auto border-dark  bg-primary mb-2">
+                <h5 class="font-weight-bold text-warning p-2">Inscription</h5>
+            </div>
 
-    </div>
+            <div class="form-row mt-2">
+                <div class="col-12 col-lg-6">
+                    <label>Prenom </label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <label>Nom</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="mt-2">
+                <label>Addresse email <span class="text-danger">*</span></label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="form-row mt-2">
+                <div class="col-12 col-lg-6">
+                    <label>Mot de passe <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <label>Confirmez le mot de passe <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+
+
+
+
+            <!-- Facturation  -->
+            <div class=" mx-auto border-dark  bg-primary mt-4 mb-2">
+                <h5 class="font-weight-bold text-warning p-2">Information de facturation</h5>
+            </div>
+
+            <div class="top-margin mt-2">
+                <label>Addresse <span class="text-danger">*</span></label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="top-margin mt-2">
+                <label>Complément d'adresse <span class="text-danger">*</span></label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="form-row mt-2">
+                <div class="top-margin col-12 col-lg-6">
+                    <label>Code Postal </label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="top-margin col-12 col-lg-6">
+                    <label>Ville</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-row mt-2">
+                <div class="top-margin col-12 col-lg-6">
+                    <label>Téléphone </label>
+                    <input type="tel" class="form-control">
+                </div>
+                <div class="top-margin col-12 col-lg-6">
+                    <label>Numéro de Siret <sup> Entreprise uniquement</sup></label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+    
+
+            <!-- Paiement -->
+            <div class=" mx-auto border-dark  bg-primary mt-4 mb-2">
+                <h5 class="font-weight-bold text-warning p-2">Paiement</h5>
+            </div>
+
+            <div class="form-row">
+                <div class="col-12 col-lg-6">
+                    <label>Nom du titulaire de la carte </label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <label>Numéro de la carte</label>
+                    <input type="text" class="form-control">
+                </div>
+                
+            </div>
+
+            <div class="form-row mt-2">
+
+                    <div class=" col-12 col-lg-6">
+                            <label>Date d'expiration</label>
+                            <div class="group-control form-row">
+                                <select class=" col-6 form-control ">
+                                    <option value="01">January</option>
+                                    <option value="02">February </option>
+                                    <option value="03">March</option>
+                                    <option value="04">April</option>
+                                    <option value="05">May</option>
+                                    <option value="06">June</option>
+                                    <option value="07">July</option>
+                                    <option value="08">August</option>
+                                    <option value="09">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select>
+                                <select class=" col-6 form-control">
+                                    <option value="16"> 2016</option>
+                                    <option value="17"> 2017</option>
+                                    <option value="18"> 2018</option>
+                                    <option value="19"> 2019</option>
+                                    <option value="20"> 2020</option>
+                                    <option value="21"> 2021</option>
+                                </select>
+                            </div>
+                        </div>
+
+                <div class="col-12 col-lg-3">
+                    <label>Cryptogramme visuel</label>
+                    <input type="text" class=" form-control">
+                </div>
+
+                <div class="form-group ml-auto mt-2" id="credit_cards">
+                    <img src="assets/images/visa.jpg" id="visa">
+                    <img src="assets/images/mastercard.jpg" id="mastercard">
+                    <img src="assets/images/amex.jpg" id="amex">
+                </div>
+            </div>
+            <hr>
+            <!-- Validation -->
+            <div class="row">
+                <div class="col-lg-8">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        J'ai lu et approuve <a href="page_terms.html">les termes et conditions</a>
+                    </label>
+                </div>
+                <div class="col-lg-4 text-right">
+                    <button class="btn btn-success" type="submit">Enregistrer</button>
+                </div>
+            </div>
+
+        </form>
+    </section>
+
+
+
+
 
 
 

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+
+<head>
+    <title>Selection de la borne de location</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lumen/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <!-- Logo -->
+        <a class="navbar-brand" href="Index.html"><img src="Logo.png" alt="Logo France Velo"></a>
+
+        <!-- Bouton pour nav format mobile -->
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <h1 class=" text-center text-warning font-weight-bold">Location de vélo en France</h1>
+
+        <!-- Barre de naviguation
+        Zone extansible au format mobile -->
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-warning h4 font-weight-bold" href="Index.html">Accueil</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-warning h4 font-weight-bold" href="#" data-toggle="modal"
+                        data-target="#ModalConnexion">Connexion </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-warning h4 font-weight-bold" href="#">Contact </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Modal Connexion-->
+        <div class="modal fade" id="ModalConnexion" tabindex="-1" role="dialog" aria-labelledby="ModalConnexionTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!-- Titre Modal -->
+                        <h5 class="modal-title" id="ModalConnexionLongTitle">Veuillez vous identifier</h5>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!-- Formulaire de connexion -->
+                    <div class="modal-body form-group text-center">
+                        <label class="col-3 " for="AdresseMail">Adresse mail : </label> <input name="AdresseMail"
+                            class="col-8" type="email">
+                        <br>
+                        <label class="col-3 " for="MotPasse">Mot de passe : </label> <input name="MotPasse"
+                            class="col-8" type="password">
+                        <br>
+
+                        <div class="row">
+                            <div class="form-check  offset-1 col-4">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue"
+                                        checked>
+                                    Se souvenir de moi
+                                </label>
+                            </div>
+                            <a class=" offset-3 col-4 " href="#">Mot de passe perdu ?</a>
+                        </div> <br>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                        <button type="submit" class="btn btn-primary text-warning">Connexion</button>
+
+                    </div>
+                    <div class="modal-footer">
+                        <span> n'avez pas encore de compte ? </span> <a href="Inscription.html"> S'inscrire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section principale -->
+    <section class="col-lg-8 col-12  mx-auto">
+        <form>
+            <div class="row">
+                <h3 class="thin col-lg-5 col-12 text-center">Veuillez selectionner une borne de location</h3>
+                <select class="col-lg-6 offset-lg-1 col-12" name="" id="">
+                    <option>Bordeaux</option>
+                    <option>Lille</option>
+                    <option>Lyon</option>
+                    <option>Paris</option>
+                </select>
+            </div>
+            <hr>
+
+
+            <!-- Map -->
+            <iframe class="col-12"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.9472260943!2d2.27702061091962!3d48.858837739589326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis!5e0!3m2!1sfr!2sfr!4v1566893384084!5m2!1sfr!2sfr"
+                width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+            <hr>
+
+            <div class="col-12 text-right">
+            <button class="btn btn-success" type="submit">Valider</button>
+        </div>
+
+
+        </form>
+    </section>
+
+
+    <!-- Pied de page -->
+    <footer class="bg-primary border-warning text-center p-2 mt-2">
+
+        <span class="text-warning h4 font-weight-bold"> @Copyright - Charles Boidin - DWWM - 2019</span>
+
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
