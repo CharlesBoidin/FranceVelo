@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="../assets/css/Style.css">
 </head>
 
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
         <!-- Logo -->
-        <a class="navbar-brand" href="Index.html"><img src="Logo.png" alt="Logo France Velo"></a>
+        <a class="navbar-brand" href="Index.html"><img src="../assets/images/Logo.png" alt="Logo France Velo"></a>
 
         <!-- Bouton pour nav format mobile -->
         <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -93,75 +93,67 @@
 
     <!-- Section principale -->
     <section class="col-lg-8 col-12  mx-auto">
-        <form>
-            <!-- Inscription -->
+        <form method="POST" action="../assets/php/Inscription.php">
+            <!-- User -->
             <div class=" mx-auto border-dark  bg-primary mb-2">
                 <h5 class="font-weight-bold text-warning p-2">Inscription</h5>
             </div>
 
             <div class="form-row mt-2">
                 <div class="col-12 col-lg-6">
-                    <label>Prenom </label>
-                    <input type="text" class="form-control">
+                    <label for="FirstNameUser" >Prenom </label>
+                    <input type="text" class="form-control" name="FirstNameUser" id="FirstNameUser">
                 </div>
                 <div class="col-12 col-lg-6">
-                    <label>Nom</label>
-                    <input type="text" class="form-control">
+                    <label for="LastNameUser">Nom</label>
+                    <input type="text" class="form-control" name="LastNameUser" id="LastNameUser">
                 </div>
             </div>
             <div class="mt-2">
-                <label>Addresse email <span class="text-danger">*</span></label>
-                <input type="text" class="form-control">
+                <label for="MailUser">Addresse email <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" name="MailUser" id="MailUser">
             </div>
 
             <div class="form-row mt-2">
                 <div class="col-12 col-lg-6">
-                    <label>Mot de passe <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control">
+                    <label for="PassWordUser">Mot de passe <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="PassWordUser" id="PassWordUser">
                 </div>
                 <div class="col-12 col-lg-6">
-                    <label>Confirmez le mot de passe <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control">
+                    <label for="PassWordUser2">Confirmez le mot de passe <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="PassWordUser2" id="PassWordUser2">
                 </div>
             </div>
 
-
-
-
-            <!-- Facturation  -->
+            <!-- Adresse  -->
             <div class=" mx-auto border-dark  bg-primary mt-4 mb-2">
                 <h5 class="font-weight-bold text-warning p-2">Information de facturation</h5>
             </div>
 
             <div class="top-margin mt-2">
-                <label>Addresse <span class="text-danger">*</span></label>
-                <input type="text" class="form-control">
-            </div>
-
-            <div class="top-margin mt-2">
-                <label>Complément d'adresse <span class="text-danger">*</span></label>
-                <input type="text" class="form-control">
+                <label for="AdressUser">Addresse <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="AdressUser" id="AdressUser">
             </div>
 
             <div class="form-row mt-2">
                 <div class="top-margin col-12 col-lg-6">
-                    <label>Code Postal </label>
-                    <input type="text" class="form-control">
+                    <label for="CpUser">Code Postal </label>
+                    <input type="text" class="form-control" name="CpUser" id="CpUser">
                 </div>
                 <div class="top-margin col-12 col-lg-6">
-                    <label>Ville</label>
-                    <input type="text" class="form-control">
+                    <label for="CityUser">Ville</label>
+                    <input type="text" class="form-control" name="CityUser" id="CityUser">
                 </div>
             </div>
 
             <div class="form-row mt-2">
                 <div class="top-margin col-12 col-lg-6">
-                    <label>Téléphone </label>
-                    <input type="tel" class="form-control">
+                    <label for="PhoneUser">Téléphone </label>
+                    <input type="tel" class="form-control" name="PhoneUser" id="PhoneUser">
                 </div>
                 <div class="top-margin col-12 col-lg-6">
-                    <label>Numéro de Siret <sup> Entreprise uniquement</sup></label>
-                    <input type="text" class="form-control">
+                    <label for="Siret">Numéro de Siret <sup> Entreprise uniquement</sup></label>
+                    <input type="text" class="form-control" name="Siret" id="Siret">
                 </div>
             </div>
     
@@ -173,12 +165,12 @@
 
             <div class="form-row">
                 <div class="col-12 col-lg-6">
-                    <label>Nom du titulaire de la carte </label>
-                    <input type="text" class="form-control">
+                    <label for="UserCB">Nom du titulaire de la carte </label>
+                    <input type="text" class="form-control" name="UserCB" id="UserCB">
                 </div>
                 <div class="col-12 col-lg-6">
-                    <label>Numéro de la carte</label>
-                    <input type="text" class="form-control">
+                    <label for="NumberCB">Numéro de la carte</label>
+                    <input type="text" class="form-control" name="NumberCB" id="NumberCB">
                 </div>
                 
             </div>
@@ -188,7 +180,7 @@
                     <div class=" col-12 col-lg-6">
                             <label>Date d'expiration</label>
                             <div class="group-control form-row">
-                                <select class=" col-6 form-control ">
+                                <select class=" col-6 form-control " name="MonthCB" id="MonthCB">
                                     <option value="01">January</option>
                                     <option value="02">February </option>
                                     <option value="03">March</option>
@@ -202,7 +194,7 @@
                                     <option value="11">November</option>
                                     <option value="12">December</option>
                                 </select>
-                                <select class=" col-6 form-control">
+                                <select class=" col-6 form-control" name="YearCB" id="YearCB">
                                     <option value="16"> 2016</option>
                                     <option value="17"> 2017</option>
                                     <option value="18"> 2018</option>
@@ -214,14 +206,14 @@
                         </div>
 
                 <div class="col-12 col-lg-3">
-                    <label>Cryptogramme visuel</label>
-                    <input type="text" class=" form-control">
+                    <label for="CryptoCB">Cryptogramme visuel</label>
+                    <input type="text" class=" form-control" name="CryptoCB" id="CryptoCB">
                 </div>
 
                 <div class="form-group ml-auto mt-2" id="credit_cards">
-                    <img src="assets/images/visa.jpg" id="visa">
-                    <img src="assets/images/mastercard.jpg" id="mastercard">
-                    <img src="assets/images/amex.jpg" id="amex">
+                    <img src="../assets/images/visa.jpg" id="visa">
+                    <img src="../assets/images/mastercard.jpg" id="mastercard">
+                    <img src="../assets/images/amex.jpg" id="amex">
                 </div>
             </div>
             <hr>
